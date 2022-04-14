@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="pt">
+  <head>
+    <title>Connect Four</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href = "style.css">
+  </head>
+  <body>
+    <div id="joining">
+      <p id="join_text"> A espera de outro jogador. Por favor aguarde... </p>
+      <button id = "desistir_multi" class = "voltar" onclick="desistir()">Desistir</button>
+      <canvas id="demo" height="100" width="100">
+      </canvas>
+    </div>
+    <script src="main.js"></script>
+    <img src="image2.png" id="logo" alt="Connect4 logo">
+    <div id="login">
+      <h2> Login </h2>
+      <label>Username:</label>
+      <input id="username" type="text" name="username" size = "10">
+      <br>
+      <label>Password:</label>
+      <input id="password" type="password" name="password" size = "10">
+      <br>
+      <p id=submit> asdasd </p>
+      <button onclick="login()" class="login_buttons">Login</button>
+      <button onclick="register()" class="login_buttons"> Register </button>
+    </div>
+    <div id="menu" class = "background_div">
+      <br /> <br />
+      <br /> <br />
+      <button class="button_menu" onclick="startGame()">Jogar</button>
+      <br /> <br />
+      <button class="button_menu" onclick="displayRegras()">Regras </button>
+      <br /> <br />
+      <button class="button_menu" onclick="displayConfig()">Configurações</button>
+      <br /> <br />
+      <button class="button_menu" onclick="displayScore()">Classificações</button>
+      <br /> <br />
+    </div>
+    <div id="rules_background" class="background_div">
+      <div id="regras_div" class ="inside_back">
+        <h3 id="regras_title">Regras do Jogo</h3>
+        <p id="regras_body">"O quatro em linha joga-se numa grelha (geralmente 7 x 6) colocada na vertical. As peças colocadas numa das aberturas no topo da grelha caiem ao longo de calhas e ocupam a primeira posição livre, seja no fundo da grelha ou sobre outra peça. Cada jogador joga com peças de cor diferente e alternadamente coloca uma peça numa das calhas ainda não completamente preenchidas. Ganha o primeiro jogador que conseguir colocar 4 peças da sua cor alinhadas, na vertical, horizontal ou diagonal."</p>
+        <img src="image1.jpg" id="image" alt="Tabuleiro do Quatro em Linha">
+        <button class ="voltar" onclick="voltar('rules')"> Voltar </button>
+      </div>
+    </div>
+    <div id="config_background" class="background_div">
+      <div id="config_div" class="inside_back">
+        <div id="tamanho" class="config_style"> Tamanho: </div>
+        <div id="gamemode" class="config_style"> Modo de Jogo: </div>
+        <div id="inicial" class="config_style"> Jogador Inicial: </div>
+        <div id="dificuldade" class="config_style"> Dificuldade: </div>
+        <button class ="voltar" onclick="voltar('config')"> Voltar </button>
+        <select id="select_tamanho1" class="select_tamanho" onchange="change_size(1)">
+          <option value = "4">4</option>
+          <option value = "5">5</option>
+          <option value = "6" selected>6</option>
+          <option value = "7">7</option>
+          <option value = "8">8</option>
+        </select>
+        <select id="select_tamanho2" class="select_tamanho" onchange="change_size(2)">
+          <option value = "4">4</option>
+          <option value = "5">5</option>
+          <option value = "6">6</option>
+          <option value = "7" selected>7</option>
+          <option value = "8">8</option>
+        </select>
+        <button id="singleplayer" class="gamemode" onclick="change_gamemode('single')"> Singleplayer </button>
+        <button id="multiplayer" class="gamemode" onclick="change_gamemode('multi')"> Multiplayer </button>
+        <button id="player1" class="gamemode" onclick="change_startPlayer('player1')"> Jogador 1 </button>
+        <button id="player2" class="gamemode" onclick="change_startPlayer('player2')"> Jogador 2 </button>
+        <div id="bola1" onclick="change_startPlayer('player1')"></div>
+        <div id="bola2" onclick="change_startPlayer('player2')"></div>
+        <button id="facil" class="gamemode" onclick="change_dificulty('easy')"> Fácil </button>
+        <button id="medio" class="gamemode" onclick= "change_dificulty('medium')"> Médio </button>
+        <button id="dificil" class="gamemode" onclick="change_dificulty('hard')"> Difícil </button>
+      </div>
+    </div>
+    <div id="score_background" class="background_div">
+      <div id="score_div" class="inside_back">
+        <div id="score1" class="config_style"> Player 1</div>
+        <div id="score2" class="config_style"> Computer</div>
+        <div id="vs"> VS </div>
+        <div id="container"></div>
+      </div>
+      <div id="multi_scorediv" class="inside_back">
+        <p id="tabela"></p>
+      </div>
+      <button class ="voltar" onclick="voltar('score')"> Voltar </button>
+    </div>
+  </body>
+</html>

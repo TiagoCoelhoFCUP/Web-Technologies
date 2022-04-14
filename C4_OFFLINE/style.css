@@ -1,0 +1,376 @@
+	.board_square {
+		border: 3px solid blue;
+		height: 45px;
+		width: 45px;
+    border-radius: 100%;
+    background-color: white;
+	}
+
+  #game_table{
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+		border-radius: 15px;
+		cursor: pointer;
+  }
+
+  .button_menu{
+    width: 220px;
+    height: 100px;
+    text-align: center;
+    color: black;
+		cursor: pointer;
+		display: inline-block;
+    border-style: solid;
+    border-color: ;
+		border-radius: 50px;
+    background-color: white;
+		transition-duration: 0.4s;
+		font-size : 15px;
+
+  }
+
+	.button_menu:hover {
+    background-color: #ed4759;
+    color: white;
+	}
+
+	.voltar:hover{
+		text-decoration: underline;
+		border-color: white;
+	}
+
+
+  body {text-align:center;}
+
+
+	.background_div {
+		background-color: #528fff;
+		border-radius: 15px;
+		width: 700px;
+		height: 600px;
+		margin-left: auto;
+    margin-right: auto;
+		display: none;
+    align-items: center;
+		position: relative;
+	}
+
+	.inside_back{
+		background-color: white;
+		border-radius: 15px;
+		border-style: solid;
+		border: none;
+		width: 90%;
+		height: 90%;
+		margin: 0 auto;
+	}
+
+	#regras_body{
+	margin-left: 30px;
+	margin-right: 30px;
+	}
+
+	#regras_title{
+		text-align: center;
+	}
+
+	#image{
+		display: block;
+    margin-left: auto;
+    margin-right: auto;
+		height: 290px;
+	 	width: 400px;
+	}
+
+	#logo{
+		display:block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 250px;
+		height: 162px;
+	}
+
+	.voltar{
+		position: absolute;
+		cursor: pointer;
+		top: 40px;
+		left: 40px;
+		width: 100px;
+		height: 40px;
+		text-align: center;
+		color: white;
+		border: none;
+		background-color: #ed4759;
+		border-radius: 15px;
+	}
+
+	#login{
+		background-color: #528fff;
+		width: 400px;
+		height: 200px;
+		border-radius: 15px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	}
+
+	label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+	font-size: 4;
+	}
+
+.config_style{
+	color: white;
+	width: 150px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #86b1ff;
+	border: none;
+	left: 120px;
+	border-radius: 50px;
+	position: absolute;
+	}
+
+	#tamanho{
+		top: 100px;
+	}
+	#gamemode{
+		top: 200px;
+	}
+	#inicial{
+		top: 300px;
+	}
+	#dificuldade{
+		top: 400px;
+	}
+
+	.select_tamanho{
+		position: absolute;
+		top: 120px;
+		width:30px;
+		height:30px;
+	}
+
+	#select_tamanho1{
+		left: 330px;
+	}
+
+	#select_tamanho2{
+		left: 375px;
+	}
+
+	.login_buttons{
+		width:130px;
+		height:30px;
+		cursor: pointer;
+		border-style: solid;
+		border-radius: 5px;
+		position: relative;
+	}
+
+	.gamemode{
+		color: white;
+		width: 110px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #ed4759;
+		border: none;
+		top: 215px;
+		border-radius: 50px;
+		position: absolute;
+		cursor: pointer;
+	}
+
+	.gamemode:hover{
+		text-decoration: underline;
+	}
+
+	#singleplayer{
+		left: 300px;
+	}
+
+	#multiplayer{
+		left: 420px;
+		background-color: #f7ac98;
+	}
+
+	#player1{
+		left:300px;
+		top:315px;
+		display: block;
+		text-align: left;
+	}
+
+	#player2{
+		left: 420px;
+		top: 315px;
+		display: block;
+		text-align: left;
+		background-color: #f7ac98;
+	}
+
+	#bola1{
+		border-radius: 100%;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left:380px;
+		top:330px;
+		background-color: red;
+		cursor: pointer;
+	}
+
+	#bola2{
+		border-radius: 100%;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		left:500px;
+		top:330px;
+		background-color: #ffff8c;
+		cursor: pointer;
+	}
+
+	#facil{
+		top: 415px;
+		left:300px;
+	}
+
+	#medio{
+		top: 415px;
+		left: 420px;
+		background-color: #f7ac98;
+	}
+
+	#dificil{
+		top: 415px;
+		left: 540px;
+		background-color: #f7ac98;
+	}
+
+	#p1{
+		top: 40px;
+		left: 65px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		color: white;
+	}
+
+	#p2{
+		top: 40px;
+		right: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		color: white;
+	}
+
+	#ficha1{
+		position: absolute;
+		top: 35px;
+		left: 150px;
+		width: 30px;
+		height: 30px;
+		border-radius: 100%;
+		background-color: red;
+	}
+
+	#ficha2{
+		position: absolute;
+		top: 35px;
+		right: 65px;
+		width: 30px;
+		height: 30px;
+		border-radius: 100%;
+		background-color: yellow;
+	}
+
+	#score1{
+		position: absolute;
+		top: 150px;
+		left: 100px;
+		background-color: #ed4759;
+	}
+
+	#score2{
+		position: absolute;
+		top: 150px;
+		left: 450px;
+		background-color: #ed4759;
+	}
+
+	#vs{
+		position: absolute;
+		top: 180px;
+		left: 335px;
+	}
+
+	#score_player1{
+		font-size: 40px;
+		position: absolute;
+		top: 300px;
+		left: 160px;
+	}
+
+	#score_player2{
+		font-size: 40px;
+		position: absolute;
+		top: 300px;
+		right: 160px;
+	}
+
+	#divider{
+		position: absolute;
+		top: 300px;
+		left: 340px;
+		font-size: 40px;
+	}
+
+	#container{
+		position: absolute;
+		top: 265px;
+		left: 100px;
+		border-color: black;
+		width: 500px;
+		height: 120px;
+		border-style: solid;
+		border-width: thin;
+		border-radius: 15px;
+	}
+
+	#desistir{
+		left : 300px;
+		top : 540px;
+	}
+
+	#voltar_board{
+		left: 300px;
+		top: 20px;
+	}
+
+	#VictoryScreen{
+		width: 200px;
+		position: absolute;
+		top: 30px;
+		left: 250px;
+		color: white;
+		font-size: 17px;
+	}
+
+	#submit{
+		visibility: hidden;
+		color: red;
+	}
